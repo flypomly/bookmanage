@@ -15,7 +15,7 @@ class IndexController {
     }
     actionAdd() {
         return async (ctx, next) => {
-            ctx.body = await ctx.render("add");
+            ctx.body = await ctx.render("books/pages/add");
         };
     }
 

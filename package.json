@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=development supervisor ./dist/app.js",
     "build": "babel ./assets/scripts/add.js --out-file ./assets/scripts/add-bundle.js",
+    "builddev":"npm run server:dev & npm run client:dev",
     "qq": "echo $npm_package_name",
     "docs": "jsdoc ./**/*.js -d ./docs/jsdocs",
     "client:dev": "webpack --mode development",
