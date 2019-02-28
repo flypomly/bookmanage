@@ -1,0 +1,21 @@
+{% extends 'pages:common/layout.html' %}
+
+{% block title %}新闻系统-新增新闻{% endblock %}
+
+{% block head %}
+{% parent %}
+<!-- injectCss -->
+{% endblock %}
+
+{% block navigation %}
+{% include "components:navigation/navigation.html" %}
+{% endblock %}
+
+{% block content %}
+{% include "components:add/add.html" %}
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
+<!-- injectJs -->
+{% endblock %}
